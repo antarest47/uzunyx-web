@@ -168,11 +168,10 @@ section { padding-block: 72px; }
 @media (max-width: 720px) { .eds { grid-template-columns: 1fr; } }
 
 /* Características */
-.features { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px 28px; }
+.features { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 48px; }
 .feature { display: grid; gap: 8px; align-content: start; }
 .feature p { color: var(--muted); font-size: 16px; }
 .feature .k { font-family: var(--mono); font-size: 13px; color: var(--accent-bright); }
-@media (max-width: 860px) { .features { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 560px) { .features { grid-template-columns: 1fr; } }
 
 .split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 40px; align-items: center; }
@@ -313,8 +312,6 @@ footer a { color: var(--fg); }
       <div class="features">
         <div class="feature"><span class="k">8 px</span><h3>Esquinas siempre redondeadas</h3><p>También maximizadas, con un margen a los bordes. Firefox, Electron y libadwaita reciben el mismo borde.</p></div>
         <div class="feature"><span class="k">panel</span><h3>Panel flotante</h3><p>Centrado y ajustado al contenido, con gestor de tareas de puntos y un reloj propio. Sigue flotando con ventanas maximizadas.</p></div>
-        <div class="feature"><span class="k">● ● ●</span><h3>Botones de bola</h3><p>Los mismos botones de ventana en KDE, GTK, Firefox y Electron.</p></div>
-        <div class="feature"><span class="k">genio</span><h3>Animaciones</h3><p>Ventanas que emergen al abrirse, minimizar con forma de genio y un Alt+Tab en carrusel.</p></div>
         <div class="feature"><span class="k">Super + C</span><h3>Mosaico opcional</h3><p>«Principal y pila» o «Espiral», con atajos para la mano izquierda y escritorios dinámicos.</p></div>
         <div class="feature"><span class="k">zsh</span><h3>Terminal lista</h3><p>Oh My Zsh, autocompletado en vivo, Atuin y un prompt de Starship en el color de la edición.</p></div>
       </div>

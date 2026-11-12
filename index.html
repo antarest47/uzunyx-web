@@ -365,11 +365,13 @@ footer a { color: var(--fg); }
       </div>
       <p class="note">Secure Boot todavía no está probado: si la ISO no arranca, desactívalo.</p>
 
-      <div class="alt">
-        <h3>¿Ya tienes Debian?</h3>
-        <p>Un solo paquete lleva todo Uzunyx. Pasa el sistema a testing si hace falta (pregunta antes y guarda copia), instala Plasma si falta y después el escritorio.</p>
-        <div class="cmd"><code><span class="p">$ </span>sudo apt install ./uzunyx-installer_*.deb</code><button class="copy" type="button" data-copy="sudo apt install ./uzunyx-installer_*.deb">Copiar</button></div>
-        <div class="cmd"><code><span class="p">$ </span>sudo uzunyx-install</code><button class="copy" type="button" data-copy="sudo uzunyx-install">Copiar</button></div>
+      <div class="alt" id="apt">
+        <h3>¿Ya tienes Debian testing?</h3>
+        <p>Uzunyx también es un repositorio APT, así que sus paquetes se actualizan con <code>apt upgrade</code> como el resto del sistema. Sirve para Debian testing (forky) con Plasma 6.7 o superior. El primer paquete agrega el repositorio y su clave; el segundo instala el escritorio.</p>
+        <div class="cmd"><code><span class="p">$ </span>wget https://dl.uzunyx.com/repo/pool/main/uzunyx-archive-keyring_0.1.0_all.deb</code><button class="copy" type="button" data-copy="wget https://dl.uzunyx.com/repo/pool/main/uzunyx-archive-keyring_0.1.0_all.deb">Copiar</button></div>
+        <div class="cmd"><code><span class="p">$ </span>sudo apt install ./uzunyx-archive-keyring_0.1.0_all.deb</code><button class="copy" type="button" data-copy="sudo apt install ./uzunyx-archive-keyring_0.1.0_all.deb">Copiar</button></div>
+        <div class="cmd"><code><span class="p">$ </span>sudo apt update &amp;&amp; sudo apt install uzunyx-desktop</code><button class="copy" type="button" data-copy="sudo apt update &amp;&amp; sudo apt install uzunyx-desktop">Copiar</button></div>
+        <p class="note">Clave «Uzunyx Archive Signing Key»: <code>971A 62FD 88B6 D53B 860F B7DD 05D1 9D02 8CE7 A0BC</code>.</p>
       </div>
     </div>
   </section>
@@ -393,7 +395,7 @@ footer a { color: var(--fg); }
     <nav>
       <a href="https://github.com/antarest47/uzunyx">Código</a>
       <a href="https://github.com/antarest47/uzunyx/issues">Issues</a>
-      <a href="https://dl.uzunyx.com/repo/">Repositorio APT</a>
+      <a href="#apt">Repositorio APT</a>
     </nav>
   </div>
 </footer>

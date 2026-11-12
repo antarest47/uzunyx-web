@@ -12,7 +12,8 @@ python3 -m http.server -d . 8000
 
 Las imágenes son copias reducidas de las del repo de Uzunyx (logos de `uzunyx-plymouth/art`,
 fondos de `wallpapers/`, capturas de `uzunyx-lnf` y `uzunyx-iso`). Al publicar una ISO nueva,
-cambiar la versión y los enlaces de descarga en `index.html`.
+cambiar la versión y los enlaces de descarga en `index.html`; si sube `uzunyx-archive-keyring`,
+también su nombre en la sección `#apt` (R2 no lista carpetas: `dl.uzunyx.com/repo/` da 404).
 
 ## Publicar
 
